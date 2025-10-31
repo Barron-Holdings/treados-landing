@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TreadOS — Sign in</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="screen">
+    <section class="card" role="form" aria-labelledby="signin-title">
+      <img src="assets/logo.svg" alt="TreadOS logo" class="logo" />
+      <h1 id="signin-title">Sign in</h1>
+
+      <form class="form" onsubmit="event.preventDefault()">
+        <label class="visually-hidden" for="username">Username</label>
+        <input id="username" type="text" name="username" placeholder="Username" autocomplete="username" />
+
+        <label class="visually-hidden" for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Password" autocomplete="current-password" />
+
+        <div class="row right forgot-row">
+          <a href="#" class="link forgot">Forgot your password?</a>
+        </div>
+
+        <button type="submit" class="btn outline">Login</button>
+
+        <p class="create">Create an account</p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
