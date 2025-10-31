@@ -16,21 +16,10 @@ img { display: block; max-width: 100%; }
 
 body {
   font-family: var(--font);
-  background: radial-gradient(circle at center, rgba(2,173,254,0.08) 0%, rgba(22,54,77,0.96) 60%, #16364D 100%);
+  background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-}
-
-/* Optional faint animated haze (matches Figma's ambient depth) */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at 50% 48%, rgba(2,173,254,0.15), transparent 70%);
-  filter: blur(60px);
-  z-index: 0;
 }
 
 .visually-hidden {
@@ -46,8 +35,6 @@ body::before {
   display: grid;
   place-items: center;
   padding: 80px 16px;
-  position: relative;
-  z-index: 1;
 }
 
 .card {
